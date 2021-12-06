@@ -44,7 +44,7 @@ for iteration in range(10000):
     adjustments = error * sigmoid_derivative(output)
     # adjustments = error * linear_derivative(output)
     
-    # print(inputs.T)
+    
     #update the weights
     weights += np.dot(inputs.T, adjustments)
 

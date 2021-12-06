@@ -13,7 +13,7 @@ def linear(x):
 def linear_derivative(x):
     return - 1 / 200
 
-
+#pre-proccessing the data
 #reading the file
 file = open('BankWages.csv')
 csvReader = csv.reader(file)
@@ -77,7 +77,6 @@ for row in data:
     outputs.append(row[3:])
 inputs = np.array(inputs)
 outputs = np.array(outputs)
-# outputs = outputs.T
 
 #assign random value to our weights
 np.random.seed(1)
@@ -101,4 +100,4 @@ for iteration in range(2000):
 
 print(f'Weights after training:\n{weights}')
 print(f'Outputs after training:\n{output}')
-print(f'Outputs after training:\n{outputs}')
+
